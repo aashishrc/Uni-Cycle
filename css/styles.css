@@ -36,6 +36,7 @@ main {
 }
 
 footer {
+  height: 4vh;
   margin-top: auto;
 }
 
@@ -48,27 +49,106 @@ header {
 }
 header .navbar-brand img {
   height: 60px;
-  width: 180px;
+  width: 230px;
 }
 header .navbar-nav .nav-item {
   margin-right: 0.5rem;
+}
+header .navbar-nav .nav-item button {
+  margin-top: 0.5rem;
 }
 header .navbar-nav .nav-item img {
   height: 40px;
   width: 40px;
 }
-header .dropdown button {
-  margin-top: 0.5rem;
+header .navbar {
+  background-color: #fff6e0;
+}
+header .nav {
+  padding: 0.5rem;
 }
 header .nav .nav-link {
   color: white;
 }
 
-main .section-first .carousel-inner .carousel-item img {
-  height: 90vh;
+main .section-one .carousel {
+  border: 1px solid black;
+  height: 80vh;
+}
+main .section-one .carousel .carousel-item {
+  position: relative;
+}
+main .section-one .carousel .carousel-overlay {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+main .section-one .carousel .carousel-overlay h3 {
+  font-size: 24px;
+}
+main .section-one .carousel .carousel-overlay p {
+  font-size: 16px;
+}
+main .section-one .carousel img {
+  height: 80vh;
+}
+main .section-two {
+  background-color: #272829;
+  color: white;
+}
+main .section-two .container {
+  padding: 10rem;
+}
+main .section-two .container .picture img {
+  border-radius: 10px;
+  height: 20rem;
+  width: 30rem;
+}
+main .section-two .container .content {
+  padding-left: 15rem;
+  text-align: left;
+}
+main .section-two .container .content h2 {
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+main .section-two .container .content h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+main .section-two .container .content p {
+  font-size: 1rem;
+}
+main .section-three {
+  background-color: #d8d9da;
+  color: #272829;
+  padding: 5rem;
+}
+main .section-four {
+  background-color: #fff6e0;
+}
+main .section-four .container-fluid .contactUS {
+  padding: 5rem;
+}
+main .section-four .container-fluid .contactUS-heading {
+  padding: 2rem;
+}
+main .section-four .container-fluid a {
+  text-decoration: none;
 }
 
-footer {
-  background-color: black;
+footer .navbar {
+  background-color: #61677a;
+}
+footer .navbar p {
+  font-size: 15px;
+  font-weight: bold;
   color: white;
 }/*# sourceMappingURL=styles.css.map */
