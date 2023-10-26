@@ -1,6 +1,49 @@
-body {
-  background-image: url("/Images/backgroundImage2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: calc(5% - 0px) calc(20% - 30px);
+@import "config";
+@import "presets";
+
+@include Structure();
+
+header {
+  color: white;
+
+  .navbar-brand {
+    img {
+      height: 60px;
+      width: 180px;
+    }
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0.5rem;
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .dropdown {
+    button {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .nav .nav-link {
+    color: white;
+  }
+}
+main {
+  .section-first {
+    .carousel-inner {
+      .carousel-item {
+        img {
+          height: 90vh;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
 }
