@@ -1,28 +1,16 @@
-// app.js
 const express = require('express');
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const routes = require('./routes');
-require('dotenv/config');
+const routes = require('./routes/index');
+require('dotenv').config();
+
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
-// Connect to MongoDB
-mongoose.connect(`mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-// Middleware
-app.use(express.json());
-
-// Routes
+app.use(bodyParser.json());
 app.use('/v1', routes);
 
-// Start the server
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
-
-
-//basic-auth
