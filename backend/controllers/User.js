@@ -115,7 +115,6 @@ const updateUser = async (req, res) => {
           username: req.body.username,
         },
       });
-  
       if (!currentUser) {
         return res.status(401).json({ message: 'Unauthorized' });
       }

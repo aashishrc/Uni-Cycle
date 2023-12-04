@@ -2,7 +2,6 @@
 const express = require('express');
 const userController = require('../controllers/User');
 const healthcheckController = require('../controllers/healthcheck');
-
 const router = express.Router();
 
 //healthcheck
