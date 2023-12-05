@@ -11,6 +11,7 @@ const Layout = () => {
           <Nav className="mr-auto">
             <Nav.Link href="profile">Profile</Nav.Link>
             <Nav.Link href="wishlist">WishList</Nav.Link>
+            <Nav.Link href="Product">Product</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

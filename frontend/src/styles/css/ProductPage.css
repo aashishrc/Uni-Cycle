@@ -1,0 +1,73 @@
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the product cards */
+  gap: 20px; /* Creates space between cards */
+  padding: 20px;
+}
+
+.product-card {
+  display: flex; /* Use flexbox for internal layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align the children */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px; /* Adjust width to your preference */
+  overflow: hidden; /* Ensures nothing overflows the border-radius */
+  background: #fff; /* Optional: sets a white background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.product-image {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+.product-info {
+  padding: 10px; /* Add some padding around the text */
+  text-align: center; /* Center the text */
+}
+
+.product-info h2 {
+  font-size: 1em; /* Adjust the size to fit the card */
+  color: #333; /* Darker text for better readability */
+  margin: 10px 0 5px 0; /* Adjust margins as needed */
+}
+
+.product-info p {
+  font-size: 0.9em; /* Slightly smaller text for details */
+  color: #555;
+  margin: 5px 0; /* Consistent spacing between paragraphs */
+}
+
+.product-actions {
+  display: flex;
+  width: 100%; /* Take full width to space out buttons */
+  justify-content: space-evenly; /* Even spacing of buttons */
+  padding: 10px 0; /* Padding at the top and bottom */
+  border-top: 1px solid #ddd; /* Adds a line to separate the actions */
+}
+
+.buy-button, .wishlist-button {
+  flex-grow: 1; /* Buttons take up equal space */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 5px; /* Add space between buttons */
+}
+
+.buy-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.wishlist-button {
+  background-color: #FF4081;
+  color: white;
+  display: flex; /* Align the heart icon and text */
+  align-items: center; /* Center them vertically */
+  justify-content: center; /* Center them horizontally */
+}
