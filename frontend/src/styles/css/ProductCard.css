@@ -1,0 +1,15 @@
+.product-button {
+  background-color: white !important;
+  border: none !important;
+}
+
+.product-button:hover {
+  background-color: white !important;
+  opacity: 0.8;
+}
+
+.product-card {
+  height: 40vh;
+  width: 35vh;
+  text-align: center;
+}/*# sourceMappingURL=ProductCard.css.map */
