@@ -6,6 +6,9 @@ import WishList from "./components/WishList";
 import Profile from "./components/Profile";
 import Product from "./components/Product"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 
 function App() {
